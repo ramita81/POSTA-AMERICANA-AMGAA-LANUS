@@ -1,0 +1,540 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #f0f0f0;
+}
+/* Agregar esto a tu CSS general */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 🔒 Evita el scroll lateral */
+}
+
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/pileta\ largada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.badge {
+  background: #333;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ffdd57;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitulo-inline {
+  display: inline; /* Antes era block */
+  font-size: 0.09em; /* Más chico */
+  font-weight: 400;
+  margin-left: 10px; /* Espacio si va al lado del título */
+  color: white; /* Cambiado a blanco */
+}
+
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.numero {
+  font-size: 3.2em;
+  font-weight: bold;
+  color: black; /* cambiado de #28a745 a negro */
+  margin-top: 30px;
+}
+
+.descripcion {
+  font-size: 1.3em;
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+
+.btn {
+  background: #ff5722;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 30px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  /* background-color: #28a745; Eliminamos esto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url("img/arboles\ 3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad */
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-align: center;
+  transition: transform 0.3s;
+  color: white; /* Asegura que el texto sea blanco */
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.card .precio {
+  font-size: 2em;
+  color: #ffeb3b; /* Cambiado de #28a745 a blanco */
+  margin: 10px 0;
+}
+.card .incluye {
+  background: #333;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.card .incluye ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card .incluye li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.card .incluye li i {
+  color: #ffffff;
+  min-width: 20px;
+}
+
+.map-container {
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.imagen-compromiso img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.whatsapp-card-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #25d366;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.whatsapp-card-btn i {
+  margin-right: 8px;
+}
+
+.whatsapp-card-btn:hover {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+.sponsor-title {
+  text-align: center;
+  margin: 0;
+  padding: 40px 0 20px;
+  color: #000000;
+  font-size: 5em;
+  background-color: #000; /* mismo fondo que sponsor-cards */
+}
+
+.sponsors-section {
+  background-image: url('img/playa\ gv.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.sponsor-title,
+.sponsor-cards,
+.sponsor-button-container {
+  background-color: transparent !important;
+}
+
+
+.sponsor-subtitle {
+  text-align: center;
+  color: #000000;
+  font-size: 2.5em;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.sponsor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 60px 20px;
+  margin-bottom: 0; /* <-- Esto elimina el espacio blanco */
+}
+
+
+.sponsor-card {
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sponsor-button-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000; /* fondo negro */
+  margin: 0; /* elimina espacio en blanco */
+}
+
+
+.btn-sponsor {
+  background-color: #25d366;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-sponsor:hover {
+  background-color: #1ebea5;
+  transform: translateY(-2px);
+}
+
+footer {
+  position: relative; /* necesario para el ::before */
+  background-image: url("img/nadador\ mariposa.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f1f1f1; /* texto claro */
+  text-align: center;
+  padding: 30px 20px;
+  overflow: hidden;
+}
+
+/* capa semitransparente */
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+  z-index: 0;
+}
+
+/* hacer que el contenido esté sobre la capa semitransparente */
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-contacts {
+  margin-bottom: 10px;
+}
+
+.footer-contacts a {
+  color: #388e3c; /* verde oscuro */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer .instagram {
+  color: #fbc02d; /* amarillo dorado */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-top .organiza {
+  color: #1976d2; /* azul sólido */
+  font-weight: bold;
+}
+
+.prueba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px; /* reduce el espacio entre las imágenes */
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(77, 76, 76, 0.251); /* gris oscuro semiopaco */
+}
+
+.prueba img {
+  width: 100px;            /* imágenes más angostas por defecto */
+  height: 430px;           /* alto fijo */
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.prueba img:hover {
+  cursor: crosshair;
+  width: 300px;            /* se expande horizontalmente */
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* efectos --------------------------- */
+
+/* Animaciones para cards y textos (solo para desktop) */
+@media (min-width: 768px) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Animación hover para cards */
+  .sponsor-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sponsor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+  }
+}
+
+/* Responsive móvil */
+@media (max-width: 767px) {
+  .sponsor-cards {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .sponsor-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Ocultar imágenes de prueba en móvil */
+  .prueba {
+    display: none;
+  }
+  
+  /* Desactivar animaciones */
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+footer p, footer a, footer span {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#preloader img {
+  width: 200px;
+  height: auto;
+  animation: zoomIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .sponsor-title {
+    font-size: 1.5em;
+    padding: 20px 10px 10px;
+    text-align: center;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .sponsor-subtitle {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .sponsor-cards {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+
+  .sponsor-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel,
+  .video-container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
+
+
